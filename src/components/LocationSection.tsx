@@ -94,16 +94,16 @@ export const LocationSection: React.FC = () => {
           </div>
 
           {/* Embedded Google Map */}
-          <div className="lg:col-span-7 glass-card rounded-3xl p-2 border border-white/10 overflow-hidden min-h-[350px] relative">
+          <div className="lg:col-span-7 glass-card rounded-3xl p-2 border border-slate-200 dark:border-white/10 overflow-hidden min-h-[350px] relative shadow-glass-lg">
             <iframe
               title="New Sigma Location Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14945.719602058694!2d77.1352!3d20.1083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd16709848c7921%3A0x6b45a99ad77d488e!2sWashim%2C%20Maharashtra%20444505!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src={SHOP_INFO.googleMapsEmbedUrl}
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: '380px', borderRadius: '1.25rem', filter: 'invert(90%) hue-rotate(180deg) contrast(100%)' }}
-              allowFullScreen={false}
+              style={{ border: 0, minHeight: '380px', borderRadius: '1.25rem' }}
+              allowFullScreen={true}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              referrerPolicy="strict-origin-when-cross-origin"
             ></iframe>
           </div>
         </div>

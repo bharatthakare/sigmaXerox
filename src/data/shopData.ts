@@ -9,7 +9,8 @@ export const SHOP_INFO = {
   formattedPhone: '+91 9623614194',
   whatsappNumber: '919623614194',
   hours: 'Monday - Saturday: 8:30 AM - 9:00 PM | Sunday: 9:00 AM - 2:00 PM',
-  googleMapsUrl: 'https://maps.google.com/?q=MD+Plaza+Near+R+A+College+Washim+Maharashtra',
+  googleMapsUrl: 'https://www.google.com/maps/place/New+Sigma+Stationery+And+Xerox/@20.1261708,77.1267881,17z/data=!3m1!4b1!4m6!3m5!1s0x3bd0e328cdb982b9:0xca532d60f86ad01f',
+  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.188770268396!2d77.12678807500583!3d20.126170781306847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd0e328cdb982b9%3A0xca532d60f86ad01f!2sNew%20Sigma%20Stationery%20And%20Xerox!5e0!3m2!1sen!2sin!4v1787023841668!5m2!1sen!2sin',
   whatsappDefaultMsg: encodeURIComponent('Hello New Sigma, I would like to enquire about your stationery products / printing services.'),
 };
 
