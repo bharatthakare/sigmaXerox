@@ -48,11 +48,11 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
             <img src="/logo.png" alt="New Sigma Stationary & Xerox Logo" className="w-full h-full object-cover rounded-xl" />
           </div>
           <div className="flex flex-col">
-            <span className="text-xl font-black tracking-tight text-slate-950 dark:text-white flex items-center gap-1.5">
+            <span className="text-xl font-black tracking-tight text-black dark:text-white flex items-center gap-1.5">
               NEW SIGMA
               <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-cyan-400 animate-pulse"></span>
             </span>
-            <span className="text-[10px] font-extrabold tracking-wider text-blue-700 dark:text-cyan-300 uppercase">
+            <span className="text-[10px] font-black tracking-wider text-blue-700 dark:text-cyan-300 uppercase">
               XEROX & STATIONARY
             </span>
           </div>
@@ -66,10 +66,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
               <a
                 key={link.id}
                 href={link.href}
-                className={`relative px-4 py-2 text-sm font-bold rounded-full transition-all duration-200 ${
+                className={`relative px-4 py-2 text-sm font-extrabold rounded-full transition-all duration-200 ${
                   isActive
-                    ? 'text-white'
-                    : 'text-slate-900 dark:text-slate-200 hover:text-blue-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-white/10'
+                    ? 'text-white font-black'
+                    : 'text-black dark:text-slate-200 hover:text-blue-700 dark:hover:text-white hover:bg-slate-200/70 dark:hover:bg-white/10'
                 }`}
               >
                 {isActive && (
@@ -90,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
           {/* Theme Toggle Button */}
           <button
             onClick={onToggleTheme}
-            className="p-2.5 rounded-full glass-pill border border-white/10 text-amber-400 hover:text-amber-300 hover:scale-110 active:scale-95 transition-all flex items-center gap-2 text-xs font-bold"
+            className="p-2.5 rounded-full glass-pill border border-slate-300 dark:border-white/10 text-amber-500 dark:text-amber-400 hover:scale-110 active:scale-95 transition-all flex items-center gap-2 text-xs font-bold"
             title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
             aria-label="Toggle theme"
           >
@@ -101,15 +101,15 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
               </>
             ) : (
               <>
-                <Moon className="w-4 h-4 text-indigo-400" />
-                <span className="text-slate-800 hidden xl:inline">Dark</span>
+                <Moon className="w-4 h-4 text-indigo-600" />
+                <span className="text-black hidden xl:inline font-black">Dark</span>
               </>
             )}
           </button>
 
           <a
             href={`tel:${SHOP_INFO.phone}`}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-sigma-blue via-blue-600 to-sigma-purple text-white text-sm font-semibold shadow-glow-blue hover:shadow-glow-purple hover:scale-105 transition-all duration-300 border border-white/20"
+            className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-sigma-blue via-blue-600 to-sigma-purple text-white text-sm font-bold shadow-glow-blue hover:shadow-glow-purple hover:scale-105 transition-all duration-300 border border-white/20"
           >
             <Phone className="w-4 h-4 text-cyan-300 animate-bounce" />
             <span>Call Now</span>
@@ -120,18 +120,18 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
         <div className="flex sm:hidden items-center gap-2">
           <button
             onClick={onToggleTheme}
-            className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-amber-400 hover:text-amber-300 transition-colors"
+            className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-amber-500 dark:text-amber-400 hover:text-amber-600 transition-colors"
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-indigo-400" />}
+            {theme === 'dark' ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-indigo-600" />}
           </button>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2.5 rounded-xl bg-white/5 border border-white/10 text-slate-200 hover:text-white hover:bg-white/10 transition-colors"
+            className="p-2.5 rounded-xl bg-slate-100 dark:bg-white/5 border border-slate-300 dark:border-white/10 text-black dark:text-slate-200 hover:text-blue-700 dark:hover:text-white transition-colors"
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 text-cyan-400" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 text-blue-600 dark:text-cyan-400" /> : <Menu className="w-6 h-6 text-black dark:text-white" />}
           </button>
         </div>
       </div>
@@ -144,7 +144,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25 }}
-            className="lg:hidden glass-nav border-b border-white/10 overflow-hidden"
+            className="lg:hidden glass-nav border-b border-slate-300 dark:border-white/10 overflow-hidden"
           >
             <div className="px-4 pt-3 pb-6 space-y-2">
               {navLinks.map((link) => {
@@ -154,10 +154,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
                     key={link.id}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-medium transition-colors ${
+                    className={`flex items-center justify-between px-4 py-3 rounded-xl text-base font-extrabold transition-colors ${
                       isActive
-                        ? 'bg-gradient-to-r from-sigma-blue/30 to-sigma-purple/30 text-sky-300 border border-sky-500/30'
-                        : 'text-slate-300 hover:bg-white/5 hover:text-white'
+                        ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-sm'
+                        : 'text-black dark:text-slate-200 hover:bg-slate-200/60 dark:hover:bg-white/5'
                     }`}
                   >
                     <span>{link.name}</span>
@@ -168,7 +168,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
               <div className="pt-4 flex flex-col gap-2">
                 <button
                   onClick={onToggleTheme}
-                  className="flex items-center justify-center gap-2 w-full py-3 rounded-xl glass-pill border border-white/10 font-semibold text-sm"
+                  className="flex items-center justify-center gap-2 w-full py-3 rounded-xl glass-pill border border-slate-300 dark:border-white/10 font-bold text-sm text-black dark:text-white"
                 >
                   {theme === 'dark' ? (
                     <>
@@ -177,7 +177,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, theme, onToggleTh
                     </>
                   ) : (
                     <>
-                      <Moon className="w-4 h-4 text-indigo-400" />
+                      <Moon className="w-4 h-4 text-indigo-600" />
                       <span>Switch to Dark Theme</span>
                     </>
                   )}
