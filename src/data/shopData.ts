@@ -1,10 +1,10 @@
 import { ProductItem, PrintingServiceItem, ProjectStep, AdvantageItem } from '../types';
 
 export const SHOP_INFO = {
-  name: 'New Sigma Stationary and Xerox',
+  name: 'New Sigma Stationery And Xerox',
   shortName: 'NEW SIGMA',
-  tagline: 'Stationary & Xerox',
-  address: 'MD Plaza, Near R. A. College, Washim, Maharashtra 444505',
+  tagline: 'Stationery & Xerox',
+  address: 'M. D. Plaza, R. A. College Road, Washim, Maharashtra 444505',
   phone: '9623614194',
   formattedPhone: '+91 9623614194',
   whatsappNumber: '919623614194',
@@ -25,7 +25,7 @@ export const MARQUEE_ITEMS = [
   '🖼️ Customized Photo Frames & Gifts',
   '📄 Spiral & Soft Binding',
   '✨ School & Office Stationery',
-  '📍 Near R. A. College, Washim',
+  '📍 R. A. College Road, Washim',
 ];
 
 export const CATEGORIES = [

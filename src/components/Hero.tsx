@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-pill border border-blue-200 dark:border-sky-400/30 text-slate-700 dark:text-sky-300 text-xs sm:text-sm font-semibold mb-6 shadow-glow-blue"
         >
           <MapPin className="w-4 h-4 text-blue-600 dark:text-cyan-400 animate-bounce" />
-          <span>MD Plaza, Near R. A. College, Washim</span>
+          <span>M. D. Plaza, R. A. College Road, Washim</span>
           <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-cyan-400"></span>
           <span className="text-slate-900 dark:text-white font-bold">Call: 9623614194</span>
         </motion.div>

@@ -73,7 +73,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onShowToast }) =
               </div>
               <div>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-bold block">Shop Location</span>
-                <span className="text-sm font-bold text-slate-900 dark:text-white">MD Plaza, Near R. A. College, Washim</span>
+                <span className="text-sm font-bold text-slate-900 dark:text-white">M. D. Plaza, R. A. College Road, Washim</span>
               </div>
             </div>
 

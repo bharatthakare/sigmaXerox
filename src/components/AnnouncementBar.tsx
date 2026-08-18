@@ -23,7 +23,7 @@ export const AnnouncementBar: React.FC = () => {
             className="flex items-center gap-1 text-cyan-300 hover:text-white transition-colors"
           >
             <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Near R. A. College, Washim</span>
+            <span>R. A. College Road, Washim</span>
           </a>
           <span className="text-white/40">|</span>
           <a

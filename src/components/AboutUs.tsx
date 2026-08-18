@@ -35,7 +35,7 @@ export const AboutUs: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm font-semibold text-slate-800 dark:text-slate-200">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-blue-600 dark:text-cyan-400" />
-                <span>Located at MD Plaza, Washim</span>
+                <span>Located at M. D. Plaza, R. A. College Road, Washim</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-purple-600 dark:text-purple-400" />

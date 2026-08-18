@@ -14,7 +14,7 @@ export const LocationSection: React.FC = () => {
             Find <span className="text-gradient-primary">New Sigma</span>
           </h2>
           <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg font-medium">
-            Located conveniently at MD Plaza near R. A. College, Washim. Easy access for students, teachers, and professionals.
+            Located conveniently at M. D. Plaza, R. A. College Road, Washim. Easy access for students, teachers, and professionals.
           </p>
         </div>
 
